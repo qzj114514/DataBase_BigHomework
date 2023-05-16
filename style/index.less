@@ -1,0 +1,119 @@
+:root {
+    @paddingLeft: 40px;
+    @topTabHeight: 70px;
+    @leftTabWidth: 300px;
+    @normalFontSize: 24px;
+    height: 100vh;
+    width: 100vw;
+    //overflow: hidden;
+
+    .index-top-tab {
+        display: flex;
+        height: @topTabHeight;
+        width: 100vw;
+
+        .index-top-tab-left {
+            width: @leftTabWidth;
+            background: #1487fe;
+        }
+
+
+        .index-top-tab-right {
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+            background: #3f4044;
+            padding-left: @paddingLeft;
+
+            .index-top-tab-title {
+                line-height: @topTabHeight;
+                color: #fff;
+                font-size: 24px;
+            }
+        }
+    }
+
+    .body {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        .index-left-tab {
+            padding-top: 40px;
+            width: @leftTabWidth;
+            height: 100%;
+            background: #f8f7fc;
+
+            .clicked {
+                background: #e5f1ff;
+            }
+
+            // 导航栏每个按钮的样式
+            .index-left-tab-item {
+                position: relative;
+                width: 100%;
+                padding: 20px 20px;
+                text-align: center;
+                font-size: 24px;
+
+                .index-left-tab-item-tag {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 8px;
+                    background: #208eff;
+                }
+            }
+
+            //病人显示的左边导航栏
+            .patient-left-tab {
+                margin-top: 40px;
+            }
+        }
+        .index-right-container {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            height: 100%;
+            background: #fbfbfd;
+            padding: @paddingLeft;
+
+            .breadcrumb {
+                margin: 0;
+
+                .breadcrumb-item {
+                    font-size: @normalFontSize;
+                }
+            }
+
+            .index-right-bottom-container {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                margin-top: @paddingLeft;
+
+                //小标题
+                >div {
+                    font-size: @normalFontSize;
+                }
+
+                .data-table {
+                    flex: 1;
+                    margin-top: @paddingLeft;
+                    background: #ffffff;
+                    width: 100%;
+                    border: #DCDFE6 1px solid;
+                    padding: @paddingLeft;
+
+                    // 每个人的姓名变蓝色
+                    tr {
+                        td:first-of-type {
+                            color: #0d6efd;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

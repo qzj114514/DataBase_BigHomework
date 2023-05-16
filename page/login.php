@@ -9,6 +9,18 @@
     <script src="/js/http_cdn.bootcdn.net_ajax_libs_jquery_3.6.4_jquery.js"></script>
     <script>
         $(document).ready(() => {
+            $('form').submit(() => {
+                const email = "test"
+                const password = "test"
+                $.post("../php/doLogin.php", {
+                    "email" : email,
+                    "password" : password
+                }, function(result) {
+                    window.location.href = '../index.php';
+                });
+
+                window.location.href = '../index.php';
+            })
         })
     </script>
 </head>
