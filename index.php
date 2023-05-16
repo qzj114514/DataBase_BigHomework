@@ -14,10 +14,10 @@ include_once "conn/conn.php";
     <meta charset="UTF-8">
     <title>主页</title>
     <link rel="stylesheet" type="text/css"
-          href="/style/http_cdn.bootcdn.net_ajax_libs_twitter-bootstrap_5.2.3_css_bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="/style/index.css">
-    <script src="/js/http_cdn.bootcdn.net_ajax_libs_twitter-bootstrap_5.2.3_js_bootstrap.bundle.js"></script>
-    <script src="/js/http_cdn.bootcdn.net_ajax_libs_jquery_3.6.4_jquery.js"></script>
+          href="./style/http_cdn.bootcdn.net_ajax_libs_twitter-bootstrap_5.2.3_css_bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./style/index.css">
+    <script src="./js/http_cdn.bootcdn.net_ajax_libs_twitter-bootstrap_5.2.3_js_bootstrap.bundle.js"></script>
+    <script src="./js/http_cdn.bootcdn.net_ajax_libs_jquery_3.6.4_jquery.js"></script>
 </head>
 <body>
 <div class="index-top-tab">
